@@ -1,0 +1,34 @@
+<section>
+  <article>
+    <p>
+      {{ getMyName() }}
+    </p>
+  </article>
+
+  <article>
+    <p>
+      Exemplo usando dataBinding com interpolation: src="{{ getUrlImage() }}"
+    </p>
+    <div>
+      <img src="{{ getUrlImage() }}">
+    </div>
+  </article>
+
+  <article>
+    <p>
+      Exemplo usando dataBinding com atBinding: [src=]"getUrlImage()"
+    </p>
+    <div>
+      <img [src]="getUrlImage()">
+    </div>
+  </article>
+
+  <article>
+    <p>
+      Exemplo usando dataBinding com atBinding com o que o angular faz por traz dos panos: bind-src="getUrlImage()"
+    </p>
+    <div>
+      <img bind-src="getUrlImage()">
+    </div>
+  </article>
+</section>
