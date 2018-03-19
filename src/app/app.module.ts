@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule

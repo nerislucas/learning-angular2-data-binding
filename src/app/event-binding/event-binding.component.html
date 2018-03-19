@@ -1,0 +1,14 @@
+<section>
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="onClick($event)" class="btn btn-primary">me click!</button>
+    </div>
+    <br>
+    <br>
+
+    <input #input (keyup.enter)="onKeyupEnter(input.value)" type="text" id="txtName" (keyup)="onKeyup($event)">
+    <p>Your name: {{ inputText }}</p>
+    <p>Your name: {{ finallyText }}</p>
+  </article>
+</section>
