@@ -8,6 +8,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databi
     DataBindingComponent,
     StyleBindingComponent,
     EventBindingComponent,
-    TwoWayDatabindingComponent
+    TwoWayDatabindingComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
