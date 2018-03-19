@@ -1,0 +1,20 @@
+<section>
+  <article>
+    <p>
+      Set your name and lastname!
+    </p>
+    <div>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" [(ngModel)]="data.name">
+    </div>
+
+    <div>
+      <label for="lastName">Your Last Name:</label>
+      <input type="text" id="lastName" [(ngModel)]="data.lastName" />
+    </div>
+    <div>
+      <button (click)="saveData()">Save</button>
+    </div>
+
+  </article>
+</section>
