@@ -9,6 +9,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { OutputPropertyBindingComponent } from './output-property-binding/output-property-binding.component';
+import { CountComponent } from './count/count.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     StyleBindingComponent,
     EventBindingComponent,
     TwoWayDatabindingComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    OutputPropertyBindingComponent,
+    CountComponent
   ],
   imports: [
     BrowserModule,
