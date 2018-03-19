@@ -1,0 +1,57 @@
+<article>
+  <h3>Class and Style Biding</h3>
+  <div>
+    Select class:
+  </div>
+  <select #class (change)="0">
+    <option value="alert alert-primary">
+      alert-primary
+    </option>
+    <option value="alert alert-secondary">
+      alert-secondary
+    </option>
+    <option value="alert alert-success">
+      alert-secondary
+    </option>
+    <option value="alert alert-danger">
+      alert-secondary
+    </option>
+    <option value="alert alert-warning">
+      alert-secondary
+    </option>
+    <option value="alert alert-info">
+      alert-secondary
+    </option>
+    <option value="alert alert-light">
+      alert-secondary
+    </option>
+    <option value="alert alert-dark">
+      alert-secondary
+    </option>
+  </select>
+
+  <div [style.display]="class.value === 'alert alert-primary' ? 'block': 'none'" class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+  </div>
+  <div [style.display]="class.value === 'alert alert-secondary' ? 'block': 'none'" class="alert alert-secondary" role="alert">
+    This is a secondary alert—check it out!
+  </div>
+  <div [style.display]="class.value === 'alert alert-success' ? 'block': 'none'" class="alert alert-success" role="alert">
+    This is a success alert—check it out!
+  </div>
+  <div [style.display]="class.value === 'alert alert-danger' ? 'block': 'none'" class="alert alert-danger" role="alert">
+    This is a danger alert—check it out!
+  </div>
+  <div [style.display]="class.value === 'alert alert-warning' ? 'block': 'none'" class="alert alert-warning" role="alert">
+    This is a warning alert—check it out!
+  </div>
+  <div [style.display]="class.value === 'alert alert-info' ? 'block': 'none'" class="alert alert-info" role="alert">
+    This is a info alert—check it out!
+  </div>
+  <div [style.display]="class.value === 'alert alert-light' ? 'block': 'none'" class="alert alert-light" role="alert">
+    This is a light alert—check it out!
+  </div>
+  <div [style.display]="class.value === 'alert alert-dark' ? 'block': 'none'" class="alert alert-dark" role="alert">
+    This is a dark alert—check it out!
+  </div>
+</article>
